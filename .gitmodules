@@ -1,0 +1,3 @@
+[submodule "qb64"]
+	path = qb64
+	url = git@github.com:kjoenth/To-Boldly-Go.git
