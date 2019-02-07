@@ -1,0 +1,36 @@
+        %Properties
+        {
+            //https://github.com/Kopernicus/Kopernicus/wiki/Properties
+            {% if props.description is defined and props.description|length -%}
+            %description = {{ props.description }}
+            {% endif -%}
+            {% if props.radius is not none -%}
+            %radius = {{ props.radius }}
+            {% endif -%}
+            {% if props.mass is not none -%}
+            %mass = {{ props.mass }}
+            {% endif -%}
+            {% if props.gravParameter is not none -%}
+            %gravParameter = {{ props.gravParameter }}
+            {% endif -%}
+            {% if props.gASL is not none -%}
+            %geeASL = {{ props.gASL }}
+            {% endif -%}
+            {% if props.rotates -%}
+            %rotates = {{ props.rotates }}
+            %rotationPeriod = {{ props.rotationPeriod }}
+            %initialRotation = {{ props.initialRotation }}
+            {% endif -%}
+            {% if props.isTidallyLocked -%}
+            %tidallyLocked = {{ props.isTidallyLocked }}
+            {% endif -%}
+            {% if props.isHomeWorld -%}
+            %isHomeWorld = {{ props.isHomeWorld }}
+            {% endif -%}
+            {% if props.timewarpAltitudeLimits -%}
+            %timewarpAltitudeLimits = {{ props.timewarpAltitudeLimits }}
+            {% endif -%}
+            {% if props.sphereOfInfluence is not none -%}
+            %sphereOfInfluence = {{ props.sphereOfInfluence }}
+            {% endif %}
+        }

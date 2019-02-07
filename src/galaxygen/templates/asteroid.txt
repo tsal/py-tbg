@@ -1,0 +1,12 @@
+@Kopernicus:FINAL
+{
+    Body
+        {
+            %name = {% asteroid.name %}
+            Template
+                {
+                    name = {% asteroid.template %}
+                }
+                
+        }
+}
